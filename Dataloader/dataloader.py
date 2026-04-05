@@ -50,7 +50,7 @@ NUM_FEATURES = 41
 
 def load_nslkdd(
     train_path="/Users/armindelmo/Documents/College/Spr26/UCF-CAP5512-Evolutionary-Computation/Paper/EvolutionaryComputationPaper/Dataloader/KDDTrain+.txt",
-    test_path="/Users/armindelmo/Documents/College/Spr26/UCF-CAP5512-Evolutionary-Computation/Paper/EvolutionaryComputationPaper/Dataloader/KDDTrain+.txt",
+    test_path="/Users/armindelmo/Documents/College/Spr26/UCF-CAP5512-Evolutionary-Computation/Paper/EvolutionaryComputationPaper/Dataloader/KDDTest+.txt",
     binary_labels=True,
     scale=False,
     validation_split=0.2,
