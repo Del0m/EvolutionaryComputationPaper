@@ -6,6 +6,8 @@ from deap import tools
 from deap import algorithms
 import time
 import math
+from Dataloader.dataloader import load_nslkdd as load_data
+from sklearn import tree
 
 # Variables
 CXPB, MUTPB, NGEN = 0.8, 1, 100
@@ -30,13 +32,29 @@ toolbox.register("mate", tools.cxOnePoint)
 toolbox.register("mutate", tools.mutFlipBit, indpb=1/41)
 
 answer = [0, 0, 0]
+data = load_data(binary_labels=True, scale=True)
 
 def accuracy(individual):
-    return np.count_nonzero(individual == answer)
+    mask = np.asarray(individual, dtype=bool)
+
+    if not mask.any():
+        return 0.0
+    
+    X_train_selection = data["X_train"].to_numpy()[:, mask]
+    X_test_selection = data["X_test"].to_numpy()[:, mask]
+
+    y_train = data["y_train"].to_numpy()
+    y_test = data["y_test"].to_numpy()
+
+    classifier = tree.DecisionTreeClassifier(random_state=30)
+    classifier.fit(X_train_selection, y_train)
+
+    return classifier.score(X_test_selection, y_test)
 
 def fitness_evaluation(individual):
     acc = accuracy(individual)
-    feature_ratio = sum(individual) / 41
+    features = np.count_nonzero(individual)
+    feature_ratio = features / 41
     return 0.8 * acc + 0.2 * (1 - feature_ratio)
 
 def simulated_annealing(offspring, TEMP):
