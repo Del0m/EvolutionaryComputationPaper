@@ -64,8 +64,7 @@ def fitness_evaluation(individual):
     fitness_cache[key] = result
     return result
 
-def simulated_annealing(offspring, TEMP):
-    
+def simulated_annealing(offspring, TEMP):  
     for child in offspring:
         for i in range(ITER_PER_OFFSPRING):
             neighbor = toolbox.clone(child)
@@ -185,7 +184,7 @@ def main():
 
     start = time.time()
 
-    for seed in range(1, 3):
+    for seed in range(1, 11):
         print(f"\n=== Run {seed}/10 ===")
 
         print("Running Standard GA...")
