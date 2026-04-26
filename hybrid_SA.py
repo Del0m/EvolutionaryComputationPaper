@@ -10,7 +10,7 @@ from sklearn import tree
 from Dataloader.dataloader import load_nslkdd
 
 # Variables
-CXPB, MUTPB, NGEN = 0.8, 1, 100
+CXPB, MUTPB, NGEN = 0.8, 1, 50
 TOURNSIZE = 3
 IND_SIZE = 41
 POPCOUNT = 100
@@ -35,26 +35,34 @@ data = load_nslkdd(binary_labels=True, scale=True)
 
 def accuracy(individual):
     mask = np.asarray(individual, dtype=bool)
-
     if not mask.any():
         return 0.0
 
-    X_train_subset = data["X_train"].to_numpy()[:, mask]
+    X_train_full = data["X_train"].to_numpy()[:, mask]
     X_test_subset = data["X_test"].to_numpy()[:, mask]
-
-    y_train = data["y_train"].to_numpy()
+    y_train_full = data["y_train"].to_numpy()
     y_test = data["y_test"].to_numpy()
 
+    sample_size = len(y_train_full) // 10
+    rng = np.random.RandomState(42)
+    indices = rng.choice(len(y_train_full), sample_size, replace=False)
+
     clf = tree.DecisionTreeClassifier(random_state=42)
-    clf.fit(X_train_subset, y_train)
+    clf.fit(X_train_full[indices], y_train_full[indices])
 
     return clf.score(X_test_subset, y_test)
 
+fitness_cache = {}
+
 def fitness_evaluation(individual):
+    key = tuple(individual)
+    if key in fitness_cache:
+        return fitness_cache[key]
     acc = accuracy(individual)
-    features = np.count_nonzero(individual)
-    feature_ratio = features / 41
-    return 0.8 * acc + 0.2 * (1 - feature_ratio)
+    feature_ratio = sum(individual) / 41
+    result = 0.8 * acc + 0.2 * (1 - feature_ratio)
+    fitness_cache[key] = result
+    return result
 
 def simulated_annealing(offspring, TEMP):
     
@@ -76,6 +84,7 @@ def simulated_annealing(offspring, TEMP):
                 
 
 def standard_ga(seed):
+    fitness_cache.clear()
     random.seed(seed)
     pop = toolbox.population(n=100)
 
@@ -86,6 +95,7 @@ def standard_ga(seed):
     log = []
 
     for gen in range(NGEN):
+        print(f"  Standard GA — Gen {gen+1}/{NGEN}", end="\r")
         hof.update(pop)
 
         fits = [ind.fitness.values[0] for ind in pop]
@@ -116,6 +126,7 @@ def standard_ga(seed):
     return hof[0], log
 
 def hybrid_ga_with_sa(seed):
+    fitness_cache.clear()
     random.seed(seed)
     temp = TEMP
     pop = toolbox.population(n=100)
@@ -127,6 +138,7 @@ def hybrid_ga_with_sa(seed):
     log = []
 
     for gen in range(NGEN):
+        print(f"  Hybrid GA-SA — Gen {gen+1}/{NGEN}", end="\r")
         hof.update(pop)
 
         fits = [ind.fitness.values[0] for ind in pop]
@@ -166,20 +178,77 @@ def main():
     hybrid_results = []
     ga_logs = []
     hybrid_logs = []
+    ga_accuracies = []
+    hybrid_accuracies = []
+    ga_features = []
+    hybrid_features = []
 
-    for seed in range(1, 31):
+    start = time.time()
+
+    for seed in range(1, 3):
+        print(f"\n=== Run {seed}/10 ===")
+
+        print("Running Standard GA...")
         best_ga, ga_log = standard_ga(seed)
+
+        print("Running Hybrid GA-SA...")
         best_hybrid, hybrid_log = hybrid_ga_with_sa(seed)
 
         ga_results.append(best_ga.fitness.values[0])
         hybrid_results.append(best_hybrid.fitness.values[0])
+        ga_accuracies.append(accuracy(best_ga))
+        hybrid_accuracies.append(accuracy(best_hybrid))
+        ga_features.append(sum(best_ga))
+        hybrid_features.append(sum(best_hybrid))
         ga_logs.append(ga_log)
         hybrid_logs.append(hybrid_log)
 
-        print(f"Run {seed}/30 — GA: {ga_results[-1]:.4f}  GA-SA: {hybrid_results[-1]:.4f}")
+        print(f"GA: {ga_results[-1]:.4f}  GA-SA: {hybrid_results[-1]:.4f}")
 
-    print(f"\nStandard GA  — Avg: {np.mean(ga_results):.4f}  Std: {np.std(ga_results):.4f}")
-    print(f"Hybrid GA-SA — Avg: {np.mean(hybrid_results):.4f}  Std: {np.std(hybrid_results):.4f}")
+    elapsed = time.time() - start
+    print(f"\nTotal runtime: {elapsed/60:.1f} minutes")
+
+    print(f"\nStandard GA  — Avg Fitness: {np.mean(ga_results):.4f}  Std: {np.std(ga_results):.4f}")
+    print(f"Hybrid GA-SA — Avg Fitness: {np.mean(hybrid_results):.4f}  Std: {np.std(hybrid_results):.4f}")
+    print(f"\nStandard GA  — Avg Accuracy: {np.mean(ga_accuracies):.4f}  Avg Features: {np.mean(ga_features):.1f}")
+    print(f"Hybrid GA-SA — Avg Accuracy: {np.mean(hybrid_accuracies):.4f}  Avg Features: {np.mean(hybrid_features):.1f}")
+
+    from scipy.stats import mannwhitneyu
+    stat, p_value = mannwhitneyu(hybrid_results, ga_results)
+    print(f"\nWilcoxon rank-sum test: p-value = {p_value:.6f}")
+    if p_value < 0.05:
+        print("Result: Statistically significant difference")
+    else:
+        print("Result: No statistically significant difference")
+
+    import matplotlib.pyplot as plt
+
+    ga_best_per_gen = np.mean([[g["best_fitness"] for g in log] for log in ga_logs], axis=0)
+    hybrid_best_per_gen = np.mean([[g["best_fitness"] for g in log] for log in hybrid_logs], axis=0)
+
+    plt.figure()
+    plt.plot(range(NGEN), ga_best_per_gen, label="Standard GA")
+    plt.plot(range(NGEN), hybrid_best_per_gen, label="Hybrid GA-SA")
+    plt.xlabel("Generation")
+    plt.ylabel("Best Fitness")
+    plt.title("Convergence: Standard GA vs Hybrid GA-SA")
+    plt.legend()
+    plt.savefig("convergence.png", dpi=300)
+    plt.show()
+
+    plt.figure()
+    plt.boxplot([ga_accuracies, hybrid_accuracies], labels=["Standard GA", "Hybrid GA-SA"])
+    plt.ylabel("Accuracy")
+    plt.title("Classification Accuracy Across 10 Runs")
+    plt.savefig("accuracy_boxplot.png", dpi=300)
+    plt.show()
+
+    plt.figure()
+    plt.boxplot([ga_features, hybrid_features], labels=["Standard GA", "Hybrid GA-SA"])
+    plt.ylabel("Features Selected")
+    plt.title("Feature Count Across 10 Runs")
+    plt.savefig("features_boxplot.png", dpi=300)
+    plt.show()
 
 
 if __name__ == "__main__":
