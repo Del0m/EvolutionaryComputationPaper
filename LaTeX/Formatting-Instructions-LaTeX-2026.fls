@@ -1,0 +1,137 @@
+PWD c:\Users\Bene B. Benson\Documents\GitHub\EvolutionaryComputationPaper\LaTeX
+INPUT C:\Users\Bene B. Benson\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\Bene B. Benson\Documents\GitHub\EvolutionaryComputationPaper\LaTeX\Formatting-Instructions-LaTeX-2026.tex
+OUTPUT Formatting-Instructions-LaTeX-2026.log
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT .\aaai2026.sty
+INPUT aaai2026.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\times.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\times.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\helvet.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\helvet.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\courier.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\courier.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\natbib\natbib.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\natbib\natbib.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\algorithms\algorithm.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\algorithms\algorithm.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\algorithms\algorithmic.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\algorithms\algorithmic.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\booktabs\booktabs.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\booktabs\booktabs.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\xurl\xurl.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\xurl\xurl.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ot1ptm.fd
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ot1ptm.fd
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ot1ptm.fd
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr7t.tfm
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT .\Formatting-Instructions-LaTeX-2026.aux
+INPUT .\Formatting-Instructions-LaTeX-2026.aux
+INPUT Formatting-Instructions-LaTeX-2026.aux
+OUTPUT Formatting-Instructions-LaTeX-2026.aux
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr7t.tfm
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb7t.tfm
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr7t.tfm
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb7t.tfm
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb7t.tfm
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr7t.tfm
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi9.tfm
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy9.tfm
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
+OUTPUT Formatting-Instructions-LaTeX-2026.pdf
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb7t.vf
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT C:\Users\Bene B. Benson\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\base\8r.enc
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb7t.vf
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr7t.vf
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb7t.vf
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr7t.vf
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT .\images\convergence_GAs.png
+INPUT .\images\convergence_GAs.png
+INPUT .\images\convergence_GAs.png
+INPUT .\images\convergence_GAs.png
+INPUT .\images\convergence_GAs.png
+INPUT .\images\convergence_GAs.png
+INPUT .\images\convergence_GAs.png
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri7t.tfm
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri7t.vf
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
+INPUT Formatting-Instructions-LaTeX-2026.aux
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi9.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi9.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmr8a.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmr8a.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmri8a.pfb
+INPUT C:\Users\Bene B. Benson\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmri8a.pfb
